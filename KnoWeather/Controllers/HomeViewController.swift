@@ -6,4 +6,15 @@
 //  Copyright © 2020 Vincent Angelo. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+class HomeViewController: UIViewController {
+    
+    let collectionView = UICollectionView()
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+}
