@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		847506A2D0A560B6CD9CA5CD /* Pods_KnoWeather.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FB84D293D0E72DC4387F172 /* Pods_KnoWeather.framework */; };
 		BF04AB062536BD3800186CD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB052536BD3800186CD2 /* AppDelegate.swift */; };
 		BF04AB082536BD3800186CD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB072536BD3800186CD2 /* SceneDelegate.swift */; };
-		BF04AB0A2536BD3800186CD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB092536BD3800186CD2 /* ViewController.swift */; };
 		BF04AB0D2536BD3800186CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF04AB0B2536BD3800186CD2 /* Main.storyboard */; };
 		BF04AB0F2536BD3900186CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF04AB0E2536BD3900186CD2 /* Assets.xcassets */; };
 		BF04AB122536BD3900186CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF04AB102536BD3900186CD2 /* LaunchScreen.storyboard */; };
@@ -21,13 +21,16 @@
 		BF04AB2A2536C39A00186CD2 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB292536C39A00186CD2 /* Result.swift */; };
 		BF04AB362536DC4F00186CD2 /* WeatherDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB352536DC4F00186CD2 /* WeatherDetailsHeader.swift */; };
 		BF04AB382536DCFF00186CD2 /* CustomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB372536DCFF00186CD2 /* CustomContainerView.swift */; };
+		BF04AB3A253702F800186CD2 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB39253702F800186CD2 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		314D68A7E9583C74767BDF6E /* Pods-KnoWeather.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnoWeather.release.xcconfig"; path = "Target Support Files/Pods-KnoWeather/Pods-KnoWeather.release.xcconfig"; sourceTree = "<group>"; };
+		668C38D052BDADFDD479FD50 /* Pods-KnoWeather.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KnoWeather.debug.xcconfig"; path = "Target Support Files/Pods-KnoWeather/Pods-KnoWeather.debug.xcconfig"; sourceTree = "<group>"; };
+		6FB84D293D0E72DC4387F172 /* Pods_KnoWeather.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KnoWeather.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF04AB022536BD3800186CD2 /* KnoWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KnoWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF04AB052536BD3800186CD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BF04AB072536BD3800186CD2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BF04AB092536BD3800186CD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BF04AB0C2536BD3800186CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF04AB0E2536BD3900186CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF04AB112536BD3900186CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -41,6 +44,7 @@
 		BF04AB292536C39A00186CD2 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		BF04AB352536DC4F00186CD2 /* WeatherDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsHeader.swift; sourceTree = "<group>"; };
 		BF04AB372536DCFF00186CD2 /* CustomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerView.swift; sourceTree = "<group>"; };
+		BF04AB39253702F800186CD2 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,18 +52,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				847506A2D0A560B6CD9CA5CD /* Pods_KnoWeather.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2CA67FB12118ECB0D27116E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				668C38D052BDADFDD479FD50 /* Pods-KnoWeather.debug.xcconfig */,
+				314D68A7E9583C74767BDF6E /* Pods-KnoWeather.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9E4B4FEAF110BC9B8306C2C9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6FB84D293D0E72DC4387F172 /* Pods_KnoWeather.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF04AAF92536BD3800186CD2 = {
 			isa = PBXGroup;
 			children = (
 				BF04AB1C2536BF5600186CD2 /* README.md */,
 				BF04AB042536BD3800186CD2 /* KnoWeather */,
 				BF04AB032536BD3800186CD2 /* Products */,
+				2CA67FB12118ECB0D27116E8 /* Pods */,
+				9E4B4FEAF110BC9B8306C2C9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,7 +106,6 @@
 				BF04AB192536BD4700186CD2 /* Utils */,
 				BF04AB052536BD3800186CD2 /* AppDelegate.swift */,
 				BF04AB072536BD3800186CD2 /* SceneDelegate.swift */,
-				BF04AB092536BD3800186CD2 /* ViewController.swift */,
 				BF04AB0B2536BD3800186CD2 /* Main.storyboard */,
 				BF04AB0E2536BD3900186CD2 /* Assets.xcassets */,
 				BF04AB102536BD3900186CD2 /* LaunchScreen.storyboard */,
@@ -95,6 +119,7 @@
 			children = (
 				BF04AB1A2536BD5000186CD2 /* Constants.swift */,
 				BF04AB272536C2D200186CD2 /* Extensions.swift */,
+				BF04AB39253702F800186CD2 /* Helpers.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -140,9 +165,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF04AB162536BD3900186CD2 /* Build configuration list for PBXNativeTarget "KnoWeather" */;
 			buildPhases = (
+				194B8085C5D87D5A10DBB8BA /* [CP] Check Pods Manifest.lock */,
 				BF04AAFE2536BD3800186CD2 /* Sources */,
 				BF04AAFF2536BD3800186CD2 /* Frameworks */,
 				BF04AB002536BD3800186CD2 /* Resources */,
+				33EB227849820C585757088F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -199,6 +226,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		194B8085C5D87D5A10DBB8BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KnoWeather-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33EB227849820C585757088F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnoWeather/Pods-KnoWeather-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KnoWeather/Pods-KnoWeather-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KnoWeather/Pods-KnoWeather-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BF04AAFE2536BD3800186CD2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -207,10 +276,10 @@
 				BF04AB2A2536C39A00186CD2 /* Result.swift in Sources */,
 				BF04AB262536C2C600186CD2 /* NetworkLayer.swift in Sources */,
 				BF04AB222536C2AF00186CD2 /* HomeViewController.swift in Sources */,
-				BF04AB0A2536BD3800186CD2 /* ViewController.swift in Sources */,
 				BF04AB282536C2D200186CD2 /* Extensions.swift in Sources */,
 				BF04AB362536DC4F00186CD2 /* WeatherDetailsHeader.swift in Sources */,
 				BF04AB062536BD3800186CD2 /* AppDelegate.swift in Sources */,
+				BF04AB3A253702F800186CD2 /* Helpers.swift in Sources */,
 				BF04AB242536C2B800186CD2 /* DetailViewController.swift in Sources */,
 				BF04AB082536BD3800186CD2 /* SceneDelegate.swift in Sources */,
 				BF04AB1B2536BD5000186CD2 /* Constants.swift in Sources */,
@@ -356,6 +425,7 @@
 		};
 		BF04AB172536BD3900186CD2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 668C38D052BDADFDD479FD50 /* Pods-KnoWeather.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -374,6 +444,7 @@
 		};
 		BF04AB182536BD3900186CD2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 314D68A7E9583C74767BDF6E /* Pods-KnoWeather.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
