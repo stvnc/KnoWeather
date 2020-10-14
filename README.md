@@ -1,9 +1,9 @@
 #  KnoWeather
-## This application's name is the simpler form of Know your Weather
+### This application's name is the simpler form of Know your Weather
 
 
 ## Project Description:
-### this application is built with OpenWeatherMap API and will used certain libraries. 
+### This application is built with OpenWeatherMap API and will used certain libraries. 
 
 
 ## Application purposes:
