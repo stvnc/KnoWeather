@@ -24,6 +24,8 @@
 		BF04AB302536C44900186CD2 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB2F2536C44900186CD2 /* Main.swift */; };
 		BF04AB322536C48600186CD2 /* Wind.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB312536C48600186CD2 /* Wind.swift */; };
 		BF04AB342536C49E00186CD2 /* Clouds.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB332536C49E00186CD2 /* Clouds.swift */; };
+		BF04AB362536DC4F00186CD2 /* WeatherDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB352536DC4F00186CD2 /* WeatherDetailsHeader.swift */; };
+		BF04AB382536DCFF00186CD2 /* CustomContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB372536DCFF00186CD2 /* CustomContainerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		BF04AB2F2536C44900186CD2 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		BF04AB312536C48600186CD2 /* Wind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wind.swift; sourceTree = "<group>"; };
 		BF04AB332536C49E00186CD2 /* Clouds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Clouds.swift; sourceTree = "<group>"; };
+		BF04AB352536DC4F00186CD2 /* WeatherDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsHeader.swift; sourceTree = "<group>"; };
+		BF04AB372536DCFF00186CD2 /* CustomContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomContainerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		BF04AB1F2536C29300186CD2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				BF04AB352536DC4F00186CD2 /* WeatherDetailsHeader.swift */,
+				BF04AB372536DCFF00186CD2 /* CustomContainerView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -220,11 +226,13 @@
 				BF04AB0A2536BD3800186CD2 /* ViewController.swift in Sources */,
 				BF04AB282536C2D200186CD2 /* Extensions.swift in Sources */,
 				BF04AB302536C44900186CD2 /* Main.swift in Sources */,
+				BF04AB362536DC4F00186CD2 /* WeatherDetailsHeader.swift in Sources */,
 				BF04AB062536BD3800186CD2 /* AppDelegate.swift in Sources */,
 				BF04AB242536C2B800186CD2 /* DetailViewController.swift in Sources */,
 				BF04AB082536BD3800186CD2 /* SceneDelegate.swift in Sources */,
 				BF04AB1B2536BD5000186CD2 /* Constants.swift in Sources */,
 				BF04AB342536C49E00186CD2 /* Clouds.swift in Sources */,
+				BF04AB382536DCFF00186CD2 /* CustomContainerView.swift in Sources */,
 				BF04AB2C2536C40B00186CD2 /* Coordinate.swift in Sources */,
 				BF04AB322536C48600186CD2 /* Wind.swift in Sources */,
 			);
