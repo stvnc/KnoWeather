@@ -13,6 +13,7 @@
 		BF04AB0D2536BD3800186CD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF04AB0B2536BD3800186CD2 /* Main.storyboard */; };
 		BF04AB0F2536BD3900186CD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF04AB0E2536BD3900186CD2 /* Assets.xcassets */; };
 		BF04AB122536BD3900186CD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF04AB102536BD3900186CD2 /* LaunchScreen.storyboard */; };
+		BF04AB1B2536BD5000186CD2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF04AB1A2536BD5000186CD2 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		BF04AB0E2536BD3900186CD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BF04AB112536BD3900186CD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF04AB132536BD3900186CD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF04AB1A2536BD5000186CD2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BF04AB1C2536BF5600186CD2 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 		BF04AAF92536BD3800186CD2 = {
 			isa = PBXGroup;
 			children = (
+				BF04AB1C2536BF5600186CD2 /* README.md */,
 				BF04AB042536BD3800186CD2 /* KnoWeather */,
 				BF04AB032536BD3800186CD2 /* Products */,
 			);
@@ -56,6 +60,7 @@
 		BF04AB042536BD3800186CD2 /* KnoWeather */ = {
 			isa = PBXGroup;
 			children = (
+				BF04AB192536BD4700186CD2 /* Utils */,
 				BF04AB052536BD3800186CD2 /* AppDelegate.swift */,
 				BF04AB072536BD3800186CD2 /* SceneDelegate.swift */,
 				BF04AB092536BD3800186CD2 /* ViewController.swift */,
@@ -65,6 +70,14 @@
 				BF04AB132536BD3900186CD2 /* Info.plist */,
 			);
 			path = KnoWeather;
+			sourceTree = "<group>";
+		};
+		BF04AB192536BD4700186CD2 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BF04AB1A2536BD5000186CD2 /* Constants.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +154,7 @@
 				BF04AB0A2536BD3800186CD2 /* ViewController.swift in Sources */,
 				BF04AB062536BD3800186CD2 /* AppDelegate.swift in Sources */,
 				BF04AB082536BD3800186CD2 /* SceneDelegate.swift in Sources */,
+				BF04AB1B2536BD5000186CD2 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
