@@ -10,17 +10,16 @@ import Foundation
 
 struct Result: Decodable {
     let coord: Coordinate
-    let weather: Weather
+    let weather: [Weather]
     let main: Main
     let wind: Wind
     let clouds: Clouds
-    let timezone: Int
     let name: String
 }
 
 struct Coordinate: Codable {
-    let lon: Float
-    let lat: Float
+    let lon: Double
+    let lat: Double
 }
 
 struct Weather: Codable {
@@ -31,16 +30,16 @@ struct Weather: Codable {
 }
 
 struct Main: Codable {
-    let temp: Float
-    let feels_like: Float
-    let temp_min: Float
-    let temp_max: Float
+    let temp: Double
+    let feels_like: Double
+    let temp_min: Double
+    let temp_max: Double
     let pressure: Int
     let humidity: Int
 }
 
 struct Wind: Codable {
-    let speed: Int
+    let speed: Double
     let deg: Int
 }
 

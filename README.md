@@ -3,7 +3,7 @@
 
 
 ## Project Description:
- This application is built with OpenWeatherMap API and will used certain libraries. 
+This application is built with OpenWeatherMap API and will used certain libraries.  For the home screen, we'll ask your permission to access your location and display your current location's weather data and maybe we'll provide some news regarding your current location. 
 
 
 ## Application purposes:

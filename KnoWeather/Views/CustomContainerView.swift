@@ -12,6 +12,7 @@ class CustomContainerView: UIView {
     
     var imageView: UIImageView = {
        let iv = UIImageView()
+        iv.setDimensions(height: 35, width: 35)
         return iv
     }()
     

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 struct Helpers {
     static func animateBackgroundColorBasedOnTime(view: UIView){
@@ -21,5 +22,9 @@ struct Helpers {
             break
         default: view.backgroundColor = .lightGray
         }
+    }
+    
+    static func convertPlacemark(from placemark: CLPlacemark) -> String {
+        return placemark.locality ?? ""
     }
 }

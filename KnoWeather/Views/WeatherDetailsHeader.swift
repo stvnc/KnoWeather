@@ -13,6 +13,7 @@ class WeatherDetailsHeader: UIView {
     
     var result: Result?{
         didSet{
+            print("result")
             configureData()
         }
     }
@@ -21,7 +22,7 @@ class WeatherDetailsHeader: UIView {
        let label = UILabel()
         label.font = UIFont.boldSystemFont(ofSize: 26)
         label.textColor = .white
-        label.text = "City placeholder"
+        label.text = "Jakarta"
         return label
     }()
     
@@ -72,7 +73,7 @@ class WeatherDetailsHeader: UIView {
         stack.anchor(top: topAnchor, paddingTop: 5)
         
         addSubview(weatherIcon)
-        weatherIcon.anchor(top: stack.bottomAnchor, paddingTop: 20)
+        weatherIcon.anchor(top: stack.bottomAnchor, paddingTop: 10)
         weatherIcon.centerX(inView: self)
     }
     
@@ -80,6 +81,8 @@ class WeatherDetailsHeader: UIView {
         guard let result = result else { return }
         cityLabel.text = result.name
         temperatureLabel.text = String(result.main.temp)
-        weatherIcon.sd_setImage(with: URL(string: "http://openweathermap.org/img/wn/\(result.weather.icon)@2x.png"), completed: nil)
+        weatherIcon.sd_setImage(with: URL(string: "http://openweathermap.org/img/wn/\(result.weather[0].icon)@2x.png"), completed: nil)
+        
+        print("icon url: \(result.weather[0].icon)")
     }
 }
