@@ -1,9 +1,9 @@
 #  KnoWeather
-### This application's name is the simpler form of Know your Weather
+ This application's name is the simpler form of Know your Weather
 
 
 ## Project Description:
-### This application is built with OpenWeatherMap API and will used certain libraries. 
+ This application is built with OpenWeatherMap API and will used certain libraries. 
 
 
 ## Application purposes:
@@ -13,7 +13,7 @@
 
 ### Libraries used:
 
-- TBA
+- <b> SDWebImage </b> for image related.
 - TBA
 - TBA
 
