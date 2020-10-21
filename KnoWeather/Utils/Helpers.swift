@@ -14,13 +14,13 @@ struct Helpers {
         let hour = NSCalendar.current.component(.hour, from: NSDate() as Date)
         
         switch hour {
-        case 1...6: view.backgroundColor = .darkGray
+        case 0...6: view.backgroundColor = .darkGray
             break
-        case 7...18: view.backgroundColor = .lightGray
+        case 7...18: view.backgroundColor = .systemBlue
             break
         case 19...24: view.backgroundColor = .darkGray
             break
-        default: view.backgroundColor = .lightGray
+        default: view.backgroundColor = .systemBlue
         }
     }
     

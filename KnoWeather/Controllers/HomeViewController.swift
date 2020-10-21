@@ -33,9 +33,9 @@ class HomeViewController: UIViewController {
     var updatingLocation = false
     var lastLocationError: Error?
     
-    lazy var cloudContainer = CustomContainerView(image: #imageLiteral(resourceName: "Logo"), value: String(result?.clouds.all ?? 0))
-    lazy var windContainer = CustomContainerView(image: #imageLiteral(resourceName: "Logo"), value: String(result?.wind.speed ?? 0))
-    lazy var humidityContainer = CustomContainerView(image: #imageLiteral(resourceName: "Logo"), value: String(result?.main.humidity ?? 0))
+    lazy var cloudContainer = CustomContainerView(image: #imageLiteral(resourceName: "Cloud"), value: String(result?.clouds.all ?? 0))
+    lazy var windContainer = CustomContainerView(image: #imageLiteral(resourceName: "Wind"), value: String(result?.wind.speed ?? 0))
+    lazy var humidityContainer = CustomContainerView(image: #imageLiteral(resourceName: "Humidity"), value: String(result?.main.humidity ?? 0))
     
     lazy var detailsHeader = WeatherDetailsHeader(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: 400))
     
@@ -65,12 +65,15 @@ class HomeViewController: UIViewController {
     func checkAuthorization(){
         let authStatus = CLLocationManager.authorizationStatus()
         
-        if authStatus == .notDetermined {
+        locationManager = CLLocationManager()
+        locationManager.delegate = self
+        
+        if authStatus == CLAuthorizationStatus.notDetermined{
             locationManager.requestWhenInUseAuthorization()
             return
         }
         
-        if authStatus == .denied || authStatus == .restricted {
+        if authStatus == CLAuthorizationStatus.denied || authStatus == CLAuthorizationStatus.restricted {
             showLocationServicesDeniedAlert()
             return
         }
@@ -100,13 +103,13 @@ class HomeViewController: UIViewController {
     }
     
     func determineCurrentLocation() {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
+        
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         locationManager.requestAlwaysAuthorization()
 
         if CLLocationManager.locationServicesEnabled() {
             locationManager.startUpdatingLocation()
+            configureDatas()
         }
     }
     

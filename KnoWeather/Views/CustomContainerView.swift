@@ -13,10 +13,11 @@ class CustomContainerView: UIView {
     var imageView: UIImageView = {
        let iv = UIImageView()
         iv.setDimensions(height: 35, width: 35)
+        iv.tintColor = .white
         return iv
     }()
     
-    var valueLabel: UILabel = {
+    var valueLabel: UILabel = { 
         let label = UILabel()
         label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .gray

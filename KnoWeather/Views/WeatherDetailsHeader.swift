@@ -20,7 +20,7 @@ class WeatherDetailsHeader: UIView {
     
     let cityLabel: UILabel = {
        let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 26)
+        label.font = UIFont.boldSystemFont(ofSize: 30)
         label.textColor = .white
         label.text = "Jakarta"
         return label
@@ -28,9 +28,33 @@ class WeatherDetailsHeader: UIView {
     
     let temperatureLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 42)
+        label.font = UIFont.boldSystemFont(ofSize: 50)
         label.textColor = .white
         label.text = "32"
+        return label
+    }()
+    
+    let weatherDetails: UILabel = {
+        let label = UILabel()
+        label.font = UIFont.systemFont(ofSize: 22)
+        label.textColor = .white
+        label.text = "Cloudy"
+        return label
+    }()
+    
+    let heavyTemp: UILabel = {
+       let label = UILabel()
+        label.text = "H: "
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = .white
+        return label
+    }()
+    
+    let lowTemp: UILabel = {
+       let label = UILabel()
+        label.text = "L: "
+        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = .white
         return label
     }()
     
@@ -62,11 +86,15 @@ class WeatherDetailsHeader: UIView {
     
     func configureView(){
         
-        let stack = UIStackView(arrangedSubviews: [cityLabel, temperatureLabel])
+        let hStack = UIStackView(arrangedSubviews: [heavyTemp, lowTemp])
+        hStack.axis = .horizontal
+        hStack.spacing = 10
+        
+        let stack = UIStackView(arrangedSubviews: [cityLabel, weatherDetails, temperatureLabel, hStack])
         stack.axis = .vertical
         stack.alignment = .center
         stack.distribution = .fill
-        stack.spacing = 10
+        stack.spacing = 5
         
         addSubview(stack)
         stack.centerX(inView: self)
@@ -81,6 +109,9 @@ class WeatherDetailsHeader: UIView {
         guard let result = result else { return }
         cityLabel.text = result.name
         temperatureLabel.text = String(result.main.temp)
+        weatherDetails.text = result.weather[0].main
+        heavyTemp.text! += String(result.main.temp_max)
+        lowTemp.text! += String(result.main.temp_min)
         weatherIcon.sd_setImage(with: URL(string: "http://openweathermap.org/img/wn/\(result.weather[0].icon)@2x.png"), completed: nil)
         
         print("icon url: \(result.weather[0].icon)")
